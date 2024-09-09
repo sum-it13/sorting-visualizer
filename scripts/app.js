@@ -116,16 +116,7 @@ const clearScreen = async () => {
   document.querySelector(".array").innerHTML = "";
 };
 
-const response = () => {
-  let Navbar = document.querySelector(".navbar");
-  if (Navbar.className === "navbar") {
-    Navbar.className += " responsive";
-  } else {
-    Navbar.className = "navbar";
-  }
-};
 
-document.querySelector(".icon").addEventListener("click", response);
 document.querySelector(".start").addEventListener("click", start);
 document.querySelector(".size-menu").addEventListener("change", RenderList);
 document.querySelector(".algo-menu").addEventListener("change", RenderScreen);
