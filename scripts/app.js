@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; // enables strict mode, catches soft errors like Accidental Global Variable declaration
 const start = async () => {
   document.querySelector(".footer > p:nth-child(1)").style.visibility = "hidden";
   let now = new Date();
