@@ -24,7 +24,7 @@ class sortAlgorithms {
         this.list[0].setAttribute("class", "cell done");
         
         document.getElementById('time').innerHTML = "O(n^2)";
-        document.querySelector(".footer > p:nth-child(1)").style.visibility = "visible";
+        document.querySelector(".footer > p:nth-child(1)").style.visibility = "visible"; //This selects the first <p> element that is a direct child of an element with the class .footer.
         // document.querySelector("footer").style.visibility = "visible";
     }
 
