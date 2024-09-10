@@ -22,7 +22,6 @@ const start = async () => {
   let now1 = new Date();
   document.getElementById('Ttime').innerHTML = (now1 - now) / 1000;
 };
-var i=0;
 let input;
 
 const RenderScreen = async () => {
