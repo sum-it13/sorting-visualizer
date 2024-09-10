@@ -21,7 +21,6 @@ const start = async () => {
   if (algoValue === 5) await algorithm.QuickSort();
   let now1 = new Date();
   document.getElementById('Ttime').innerHTML = (now1 - now) / 1000;
-  // document.querySelector(".footer > p:nth-child(2)").style.visibility = "visible";
 };
 var i=0;
 let input;
@@ -39,12 +38,8 @@ const RenderInput = async () => {
 
 const RenderList = async () => {
   let sizeValue = Number(document.querySelector(".size-menu").value);
-  // if(i>0){
-  //   input = prompt("Do you want to manually input the array? Answer - Y/N");
-  // }
-  // i++;
+
   await clearScreen();
-  //await RenderInput();
   
 
   let list = await randomList(sizeValue);
@@ -82,12 +77,6 @@ const randomList = async (Length) => {
     }
   }
 
-  // for (let counter = 0; counter < Length; ++counter) {
-  //   let randomNumber = Math.floor(
-  //     Math.random() * (upperBound - lowerBound + 1) + lowerBound
-  //   );
-  //   list.push(parseInt(randomNumber));
-  // }
 
   
   return list;
